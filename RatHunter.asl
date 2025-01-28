@@ -79,5 +79,5 @@ isLoading
 
 reset
 {
-	return current.Loading && current.GameState == "1.xml";
+	return current.Loading && (old.GameState != "1.xml" && current.GameState == "1.xml");
 }
